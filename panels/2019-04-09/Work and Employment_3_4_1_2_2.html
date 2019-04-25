@@ -1,0 +1,42 @@
+<h2>Work and Employment_3_4_1_2_2 (13 texts)</h2><p>See <a href="../../csv/2019-04-09/Work and Employment.csv">Work and Employment.csv</a> for a list of texts.</p>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
+
+
+<div id="ldavis_el105007970268484099053956"></div>
+<script type="text/javascript">
+
+var ldavis_el105007970268484099053956_data = {"mdsDat": {"Freq": [67.82726037107548, 32.17273962892451], "cluster": [1, 1], "topics": [1, 2], "x": [2352.8154296875, -2352.815185546875], "y": [-5514.8720703125, 5514.8720703125]}, "tinfo": {"Category": ["Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2"], "Freq": [11.0, 6.0, 9.0, 17.0, 8.0, 10.0, 9.0, 10.0, 16.02240679024027, 7.902554097899939, 7.486462798563325, 8.140581116813843, 5.921691904670181, 4.721945421126446, 4.478214879642567, 2.3010417027468435, 4.361758909390068, 7.328189558812747, 4.498791459027386, 2.3504212522316683, 2.8207564828812584, 2.511436700878461, 2.1259567149883294, 1.0277902100866745], "Term": ["work", "don", "post", "company", "photos", "boss", "personal", "account", "company", "account", "personal", "boss", "photos", "post", "work", "don", "don", "work", "post", "photos", "boss", "personal", "account", "company"], "Total": [11.0, 6.0, 9.0, 17.0, 8.0, 10.0, 9.0, 10.0, 17.050197000326946, 10.028510812888268, 9.997899499441786, 10.961337599695101, 8.272113156901849, 9.220736880153833, 11.806404438455314, 6.662800612136912, 6.662800612136912, 11.806404438455314, 9.220736880153833, 8.272113156901849, 10.961337599695101, 9.997899499441786, 10.028510812888268, 17.050197000326946], "loglift": [8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 0.326, 0.15, 0.0989, 0.0907, 0.0539, -0.281, -0.5812, -0.675, 0.7104, 0.6571, 0.4164, -0.1242, -0.2233, -0.2475, -0.4172, -1.6747], "logprob": [8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, -1.2686, -1.9754, -2.0295, -1.9457, -2.264, -2.4904, -2.5434, -3.2092, -1.8239, -1.305, -1.793, -2.4422, -2.2598, -2.3759, -2.5425, -3.2694]}, "token.table": {"Topic": [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2], "Freq": [0.7977256194128742, 0.19943140485321856, 0.7298379351277828, 0.2736892256729186, 0.9384055796946623, 0.058650348730916395, 0.30017407340042773, 0.6003481468008555, 0.7001470659302819, 0.3000630282558351, 0.7253285691569502, 0.24177618971898338, 0.5422560110962177, 0.4338048088769741, 0.338799167930532, 0.592898543878431], "Term": ["account", "account", "boss", "boss", "company", "company", "don", "don", "personal", "personal", "photos", "photos", "post", "post", "work", "work"]}, "R": 8, "lambda.step": 0.01, "plot.opts": {"xlab": "PC1", "ylab": "PC2"}, "topic.order": [1, 2]};
+
+function LDAvis_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(LDAvis) !== "undefined"){
+   // already loaded: just create the visualization
+   !function(LDAvis){
+       new LDAvis("#" + "ldavis_el105007970268484099053956", ldavis_el105007970268484099053956_data);
+   }(LDAvis);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/LDAvis
+   require.config({paths: {d3: "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+        new LDAvis("#" + "ldavis_el105007970268484099053956", ldavis_el105007970268484099053956_data);
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & LDAvis
+    LDAvis_load_lib("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js", function(){
+         LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+                 new LDAvis("#" + "ldavis_el105007970268484099053956", ldavis_el105007970268484099053956_data);
+            })
+         });
+}
+</script>

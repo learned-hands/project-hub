@@ -1,0 +1,42 @@
+<h2>Work and Employment_3_4_3_2 (20 texts)</h2><p>See <a href="../../csv/2019-04-09/Work and Employment.csv">Work and Employment.csv</a> for a list of texts.</p>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
+
+
+<div id="ldavis_el1050015796269282509326648"></div>
+<script type="text/javascript">
+
+var ldavis_el1050015796269282509326648_data = {"mdsDat": {"Freq": [74.94947007264605, 25.050529927353942], "cluster": [1, 1], "topics": [1, 2], "x": [2352.8154296875, -2352.815185546875], "y": [-5514.8720703125, 5514.8720703125]}, "tinfo": {"Category": ["Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2"], "Freq": [8.0, 6.0, 5.0, 6.0, 12.0, 8.0, 10.0, 51.0, 11.0, 7.0, 47.99794523201469, 10.380586508513206, 6.867145721054491, 7.3577666410588884, 8.462860496803996, 5.838186634166465, 3.8514222516637835, 2.657175793378133, 2.1544821618165595, 1.117244953243199, 7.334297091930667, 3.631514118597918, 4.015646150106332, 2.863047087161928, 2.704292184035687, 3.6334986718101434, 2.9798828220371805, 0.7834776617438272, 0.8054360299690317, 3.5640917888938763], "Term": ["employment", "time", "legal", "sent", "employees", "manager", "employer", "employee", "said", "case", "employee", "said", "case", "employer", "employees", "manager", "sent", "time", "legal", "employment", "employment", "legal", "time", "sent", "manager", "employees", "employer", "case", "said", "employee"], "Total": [8.0, 6.0, 5.0, 6.0, 12.0, 8.0, 10.0, 51.0, 11.0, 7.0, 51.56203702090857, 11.186022538482238, 7.650623382798318, 10.337649463096069, 12.09635916861414, 8.542478818202152, 6.714469338825712, 6.672821943484465, 5.785996280414477, 8.451542045173866, 8.451542045173866, 5.785996280414477, 6.672821943484465, 6.714469338825712, 8.542478818202152, 12.09635916861414, 10.337649463096069, 7.650623382798318, 11.186022538482238, 51.56203702090857], "loglift": [10.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 0.2167, 0.2136, 0.1803, -0.0517, -0.0689, -0.0923, -0.2675, -0.6324, -0.6995, -1.7351, 1.2425, 0.9185, 0.8764, 0.5319, 0.2341, 0.1816, 0.1404, -0.8945, -1.2468, -1.2876], "logprob": [10.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, -0.7003, -2.2315, -2.6447, -2.5757, -2.4358, -2.807, -3.223, -3.5942, -3.8039, -4.4606, -1.483, -2.1859, -2.0853, -2.4237, -2.4807, -2.1853, -2.3837, -3.7195, -3.6919, -2.2046]}, "token.table": {"Topic": [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2], "Freq": [0.9149581216791848, 0.1307083030970264, 0.9309174496061094, 0.07757645413384245, 0.6613560236171913, 0.33067801180859563, 0.6771365217005084, 0.29020136644307504, 0.11832160269155093, 0.8282512188408565, 0.3456621648323512, 0.6913243296647024, 0.7023722420259695, 0.35118612101298474, 0.8939728098703472, 0.08939728098703471, 0.595728388671078, 0.4467962915033085, 0.4495849020711974, 0.5994465360949298], "Term": ["case", "case", "employee", "employee", "employees", "employees", "employer", "employer", "employment", "employment", "legal", "legal", "manager", "manager", "said", "said", "sent", "sent", "time", "time"]}, "R": 10, "lambda.step": 0.01, "plot.opts": {"xlab": "PC1", "ylab": "PC2"}, "topic.order": [1, 2]};
+
+function LDAvis_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(LDAvis) !== "undefined"){
+   // already loaded: just create the visualization
+   !function(LDAvis){
+       new LDAvis("#" + "ldavis_el1050015796269282509326648", ldavis_el1050015796269282509326648_data);
+   }(LDAvis);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/LDAvis
+   require.config({paths: {d3: "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+        new LDAvis("#" + "ldavis_el1050015796269282509326648", ldavis_el1050015796269282509326648_data);
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & LDAvis
+    LDAvis_load_lib("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js", function(){
+         LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+                 new LDAvis("#" + "ldavis_el1050015796269282509326648", ldavis_el1050015796269282509326648_data);
+            })
+         });
+}
+</script>

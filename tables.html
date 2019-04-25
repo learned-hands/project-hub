@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/HTML4/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<html>
+<head>
+<title>Learned Hands: Project Hub</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<script>
+	function update_eval() {
+		$("#eval").attr("src","html/2019-04-17/"+$("#model").val()+".html");
+	}
+	function update_panel() {
+		$("#panel").attr("src","panels/2019-04-17/"+$("#topic").val()+".html");
+	}
+</script>
+<body onLoad="update_panel();update_eval();">
+<form>
+<div id=page>
+
+<div id=header>
+	<table>
+	<tr><td valign="middle">
+		<a href="index.html"><img id="logo" src="images/lh_logo.png" width="273px" height="85px;"></a>
+	</td><td valign="middle">
+		<font size=+3><b>Project Hub</b></font></br>
+		<i>Page updated: 2019-04-18</i>
+	</td></tr>
+	</table>
+</div>
+
+
+<div class="menu_bar">
+	<p style="text-align:center;">
+		<a href="index.html" class="menu">&nbsp;About&nbsp;</a>
+		<a href="data.html" class="menu">&nbsp;Labeled Data&nbsp;</a>
+		<a href="models.html" class="menu">&nbsp;Draft Models&nbsp;</a>
+		<a href="observations.html" class="menu">&nbsp;Tenative Observations&nbsp;</a>
+		<a href="topics.html" class="menu">&nbsp;Latent Topics&nbsp;</a>
+		<a href="tables.html" class="menu">&nbsp;Draft Labels&nbsp;</a>
+		<a href="media.html" class="menu">&nbsp;Media / Outreach&nbsp;</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp; 
+		<a href="https://nsmi.lsntap.org/browse-v2" class="menu" target="_blank">&nbsp;NMSI v2&nbsp;</a>
+		<a href="https://learnedhands.law.stanford.edu/" class="menu" target="_blank">&nbsp;The Game&nbsp;</a>
+	</p>
+</div><div style="float:left;margin:0;width:100%;"><p class="banner">If you would like to help...</p><h1>Data Tables</h1><p>Here's all of the Reddit data along with labels, from both our current classifier and the last latent topic run. You can access everything in one file or slice it by top-level taxonomy items if we generated <a href="topics.html">topic models</a> for that category.</p><ul><li><a href="csv/2019-04-17/All Categories.csv">All Categories.csv</a></li><li><a href="csv/2019-04-17/Family.csv">Family.csv</a></li><li><a href="csv/2019-04-17/Housing.csv">Housing.csv</a></li><li><a href="csv/2019-04-17/Work and Employment.csv">Work and Employment.csv</a></li></ul>
+</div>
+<div class="footer">
+    <span style="float:right">
+	Site Created by Suffolk's <a href="https://suffolklitlab.org/">LIT Lab</a> in collaboration with Stanford's <a href="https://law.stanford.edu/organizations/pages/legal-design-lab/">Legal Design Lab</a>.
+    </span>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/cc_by-nc-sa.png" align="left"/></a>
+    &nbsp;&nbsp;This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 International License</a>.
+    
+</div>
+
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+	font-family: georgia, 'times new roman', times, serif;
+}
+
+#page {
+	margin: 5px auto 0 auto;
+	width: 1220px;
+}
+
+#logo {
+	float:left;
+	margin: 0 40px 0px 0;
+}
+
+#header {
+	float:left;
+	width:100%;
+	margin-bottom:0px;
+}
+
+.graph {
+	padding:25px 0 0 0;
+}
+
+
+.menu_bar{
+	float:left;
+	width:100%;
+	border-top: solid 1px #888;
+	border-bottom: solid 1px #888;
+	margin:15px 0 0px 0;
+}
+
+.banner {
+	margin:15px 0 25px 0;
+	padding:15px;
+	background:#fce988;
+	border: 1px solid #555;
+}
+
+a.menu {
+	font-family: sans-serif;
+	text-decoration: none;
+    font-size: 12px;
+	color: #529ecc;
+	font-weight: 700;
+ 	text-transform: uppercase;
+	padding:0 4px;
+}
+
+a.anchor {
+		display:block;
+		float:right;
+		width:22px;
+		height:16px;
+		background-image: url("../images/link.png");
+		background-repeat: no-repeat;
+		background-position: center;
+}
+
+.charges_dropdown {
+	width:200px;
+}
+
+.Defenders{
+	float:left;
+	background:#4e79a7;
+	line-height: 25px;
+	padding:0px 5px 0px 5px;
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+.FamilyAdvocacy{
+	float:left;
+	background:#59a14f;
+	line-height: 25px;
+	padding:0px 5px 0px 5px;
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+.IntellectualPropertyEntrepreneurship{
+	float:left;
+	background:#9c755f;
+	line-height: 25px;
+	padding:0px 5px 0px 5px;
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+.HealthLaw{
+	float:left;
+	background:#f28e2b;
+	line-height: 25px;
+	padding:0px 5px 0px 5px;
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+.AcceleratorPractice{
+	float:left;
+	background:#edc948;
+	line-height: 25px;
+	padding:0px 5px 0px 5px
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+.Immigration{
+	float:left;
+	background:#bab0ac;
+	line-height: 25px;
+	padding:0px 5px 0px 5px;
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+.IndigenousPeoplesRights{
+	float:left;
+	background:#e15759;
+	line-height: 25px;
+	padding:0px 5px 0px 5px;
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+.JuvenileDefenders{
+	float:left;
+	background:#b07aa1;
+	line-height: 25px;
+	padding:0px 5px 0px 5px;
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+.InnocenceClinic{
+	float:left;
+	background:#76b7b2;
+	line-height: 25px;
+	padding:0px 5px 0px 5px;
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+.LITFellowDemonstration{
+	float:left;
+	background:#ff9da7;
+	line-height: 25px;
+	padding:0px 5px 0px 5px;
+	margin:3px 3px 3px 0px;
+	border-radius:5px;
+}
+
+.field_entry {
+	float:left;
+	width:100%;
+	border: none;
+	border-top: 1px solid #ddd;
+	padding:0 0 25px 0;
+}
+
+.footer {
+	font-family: sans-serif;
+	margin:50px 0;
+	text-align:left;
+	text-color:#555;
+	float:left;
+	width:100%;
+	border-top: solid 1px #555;
+	padding:15px 10px 40px 10px;
+	font-size: 14px;
+	line-height: 15px;
+	color:#555;
+	box-sizing: border-box;
+}

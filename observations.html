@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/HTML4/loose.dtd">
+    <HTML xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:og="http://ogp.me/ns#"
+          xmlns:fb="http://www.facebook.com/2008/fbml">
+    <html>
+    <head>
+    <title>Tenative Observations</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    </head>
+    <script>
+        function update_models() {
+            $("#eval").attr("src","html/"+$("#version").val()+"/"+$("#model").val()+".html");
+            $("#models_sum").attr("src","html/"+$("#version").val()+"/models.html");
+
+        }
+        function update_model_drop(version) {
+            if (version == "") {
+                console.log("null");
+            } else if (version == "2019-04-23") {
+				$('#model').html(" <option value=\"Accidents, Injuries, and Torts (Problems with Others)\">Accidents, Injuries, and Torts (Problems with Others)</option><option value=\"Court and Lawyers\">Court and Lawyers</option><option value=\"Crime & Prisons\">Crime & Prisons</option><option value=\"Estates & Wills\">Estates & Wills</option><option value=\"Family\">Family</option><option value=\"Health\">Health</option><option value=\"Housing\">Housing</option><option value=\"Immigration\">Immigration</option><option value=\"Money, Debt, and Consumer Issues\">Money, Debt, and Consumer Issues</option><option value=\"Traffic and Cars\">Traffic and Cars</option><option value=\"Work and Employment\">Work and Employment</option> ");
+			} else if (version == "2019-04-19") {
+				$('#model').html(" <option value=\"Accidents, Injuries, and Torts (Problems with Others)\">Accidents, Injuries, and Torts (Problems with Others)</option><option value=\"Benefits\">Benefits</option><option value=\"Civil and Human Rights\">Civil and Human Rights</option><option value=\"Court and Lawyers\">Court and Lawyers</option><option value=\"Crime & Prisons\">Crime & Prisons</option><option value=\"Disaster Relief\">Disaster Relief</option><option value=\"Education\">Education</option><option value=\"Environmental Justice\">Environmental Justice</option><option value=\"Estates & Wills\">Estates & Wills</option><option value=\"Family\">Family</option><option value=\"Government services\">Government services</option><option value=\"Health\">Health</option><option value=\"Housing\">Housing</option><option value=\"Immigration\">Immigration</option><option value=\"Money, Debt, and Consumer Issues\">Money, Debt, and Consumer Issues</option><option value=\"Native American Issues and Tribal Law\">Native American Issues and Tribal Law</option><option value=\"Small Business and IP\">Small Business and IP</option><option value=\"Traffic and Cars\">Traffic and Cars</option><option value=\"Veterans & Military\">Veterans & Military</option><option value=\"Work and Employment\">Work and Employment</option> ");
+			} else if (version == "2019-04-17") {
+				$('#model').html(" <option value=\"Accidents, Injuries, and Torts (Problems with Others)\">Accidents, Injuries, and Torts (Problems with Others)</option><option value=\"Benefits\">Benefits</option><option value=\"Civil and Human Rights\">Civil and Human Rights</option><option value=\"Court and Lawyers\">Court and Lawyers</option><option value=\"Crime & Prisons\">Crime & Prisons</option><option value=\"Estates & Wills\">Estates & Wills</option><option value=\"Family\">Family</option><option value=\"Government services\">Government services</option><option value=\"Health\">Health</option><option value=\"Housing\">Housing</option><option value=\"Immigration\">Immigration</option><option value=\"Money, Debt, and Consumer Issues\">Money, Debt, and Consumer Issues</option><option value=\"Small Business and IP\">Small Business and IP</option><option value=\"Traffic and Cars\">Traffic and Cars</option><option value=\"Work and Employment\">Work and Employment</option> ");
+			} 
+            update_models();
+        }
+        function update_panel_drop(version) {
+            if (version == "") {
+                console.log("null");
+            } else if (version == "2019-04-23") {
+				$('#model').html(" <option value=\"Accidents, Injuries, and Torts (Problems with Others)\">Accidents, Injuries, and Torts (Problems with Others)</option><option value=\"Court and Lawyers\">Court and Lawyers</option><option value=\"Crime & Prisons\">Crime & Prisons</option><option value=\"Estates & Wills\">Estates & Wills</option><option value=\"Family\">Family</option><option value=\"Health\">Health</option><option value=\"Housing\">Housing</option><option value=\"Immigration\">Immigration</option><option value=\"Money, Debt, and Consumer Issues\">Money, Debt, and Consumer Issues</option><option value=\"Traffic and Cars\">Traffic and Cars</option><option value=\"Work and Employment\">Work and Employment</option> ");
+			} else if (version == "2019-04-19") {
+				$('#model').html(" <option value=\"Accidents, Injuries, and Torts (Problems with Others)\">Accidents, Injuries, and Torts (Problems with Others)</option><option value=\"Benefits\">Benefits</option><option value=\"Civil and Human Rights\">Civil and Human Rights</option><option value=\"Court and Lawyers\">Court and Lawyers</option><option value=\"Crime & Prisons\">Crime & Prisons</option><option value=\"Disaster Relief\">Disaster Relief</option><option value=\"Education\">Education</option><option value=\"Environmental Justice\">Environmental Justice</option><option value=\"Estates & Wills\">Estates & Wills</option><option value=\"Family\">Family</option><option value=\"Government services\">Government services</option><option value=\"Health\">Health</option><option value=\"Housing\">Housing</option><option value=\"Immigration\">Immigration</option><option value=\"Money, Debt, and Consumer Issues\">Money, Debt, and Consumer Issues</option><option value=\"Native American Issues and Tribal Law\">Native American Issues and Tribal Law</option><option value=\"Small Business and IP\">Small Business and IP</option><option value=\"Traffic and Cars\">Traffic and Cars</option><option value=\"Veterans & Military\">Veterans & Military</option><option value=\"Work and Employment\">Work and Employment</option> ");
+			} else if (version == "2019-04-17") {
+				$('#model').html(" <option value=\"Accidents, Injuries, and Torts (Problems with Others)\">Accidents, Injuries, and Torts (Problems with Others)</option><option value=\"Benefits\">Benefits</option><option value=\"Civil and Human Rights\">Civil and Human Rights</option><option value=\"Court and Lawyers\">Court and Lawyers</option><option value=\"Crime & Prisons\">Crime & Prisons</option><option value=\"Estates & Wills\">Estates & Wills</option><option value=\"Family\">Family</option><option value=\"Government services\">Government services</option><option value=\"Health\">Health</option><option value=\"Housing\">Housing</option><option value=\"Immigration\">Immigration</option><option value=\"Money, Debt, and Consumer Issues\">Money, Debt, and Consumer Issues</option><option value=\"Small Business and IP\">Small Business and IP</option><option value=\"Traffic and Cars\">Traffic and Cars</option><option value=\"Work and Employment\">Work and Employment</option> ");
+			} 
+            update_models();
+        }
+        function update_panel() {
+            $("#panel").attr("src","panels/"+$("#version").val()+"/"+$("#topic").val()+".html");
+        }    
+    </script>
+    <body onLoad="update_panel();update_models();update_model_drop('2019-04-25')">
+    <form>
+    <div id=page>
+
+    <div id=header>
+        <table>
+        <tr><td valign="middle">
+            <a href="index.html"><img id="logo" src="images/lh_logo.png" width="273px" height="85px;"></a>
+        </td><td valign="middle">
+            <font size=+3><b>Project Hub</b></font></br>
+            <i>Page updated: 2019-04-23</i>
+        </td></tr>
+        </table>
+    </div>
+
+
+    <div class="menu_bar">
+        <p style="text-align:center;">
+            <a href="index.html" class="menu">&nbsp;About&nbsp;</a>
+            <a href="data.html" class="menu">&nbsp;Labeled Data&nbsp;</a>
+            <a href="models.html" class="menu">&nbsp;Draft Models&nbsp;</a>
+            <a href="observations.html" class="menu">&nbsp;Tenative Observations&nbsp;</a>
+            <a href="topics.html" class="menu">&nbsp;Latent Topics&nbsp;</a>
+            <a href="media.html" class="menu">&nbsp;Media / Outreach&nbsp;</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp; 
+            <a href="https://nsmi.lsntap.org/browse-v2" class="menu" target="_blank">&nbsp;NMSI v2&nbsp;</a>
+            <a href="https://learnedhands.law.stanford.edu/" class="menu" target="_blank">&nbsp;The Game&nbsp;</a>
+        </p>
+    </div><div style="float:left;margin:0;width:100%;"><p class="banner">
+    Are you: (1) a subject matter expert who would like to work with us creating lists of legal issues or lists of service providers; (2) would you like to review our work; or 
+    (3) do you have a dataset of people talking about their legal and life problems that you might be willing to share with us?
+    <b>Sign up/tell us more using <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKwbrjhjE7H3A9sEhgT93qXaeoCvxpb6FJXRja9YdFE90WTg/viewform" target="_blank">this form</a></b>.</p><h1>Tenative Observations</h1><p>We're going to fill this page with interesting observations and graphs. Stuff like, "If you take the current draft models and ask them to classify the whole corpus, it turns out that only about 4% of the texts fail to get tagged with at least one label. That is, we can categorize about 96% of the corpus."</p><img src="" />
+</div>
+<div class="footer">
+    <span style="float:right">
+	Site Created by Suffolk's <a href="https://suffolklitlab.org/">LIT Lab</a> in collaboration with Stanford's <a href="https://law.stanford.edu/organizations/pages/legal-design-lab/">Legal Design Lab</a>.
+    </span>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/cc_by-nc-sa.png" align="left"/></a>
+    &nbsp;&nbsp;This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 International License</a>.
+    
+</div>
+
+</div>
+</form>
+</body>
+</html>
