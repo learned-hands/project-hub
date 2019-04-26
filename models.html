@@ -57,7 +57,6 @@
         </table>
     </div>
 
-
     <div class="menu_bar">
         <p style="text-align:center;">
             <a href="index.html" class="menu">&nbsp;About&nbsp;</a>
@@ -67,7 +66,7 @@
             <a href="topics.html" class="menu">&nbsp;Latent Topics&nbsp;</a>
             <a href="media.html" class="menu">&nbsp;Media / Outreach&nbsp;</a>
             &nbsp;&nbsp;|&nbsp;&nbsp; 
-            <a href="https://nsmi.lsntap.org/browse-v2" class="menu" target="_blank">&nbsp;NMSI v2&nbsp;</a>
+            <a href="https://nsmi.lsntap.org/browse-v2" class="menu" target="_blank">&nbsp;NSMI v2&nbsp;</a>
             <a href="https://learnedhands.law.stanford.edu/" class="menu" target="_blank">&nbsp;The Game&nbsp;</a>
         </p>
     </div><div style="float:left;margin:0;width:100%;"><p class="banner">
@@ -75,7 +74,7 @@
     (3) do you have a dataset of people talking about their legal and life problems that you might be willing to share with us?
     <b>Sign up/tell us more using <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKwbrjhjE7H3A9sEhgT93qXaeoCvxpb6FJXRja9YdFE90WTg/viewform" target="_blank">this form</a></b>.</p><h1>Draft (Not Horrible) Models</h1><p>
 
-The following are metrics for draft (not horrible) models based on different runs of the labeled data. We consider a model not to be horrible when the following conditions are met: (1) the accuracy beats that of always guessing "yes" or always guessing "no;" (2) the <a href="https://en.wikipedia.org/wiki/Precision_and_recall#Recall">recall</a> is greater than 0.5; (3) the <a href="https://en.wikipedia.org/wiki/Precision_and_recall#Precision">precision</a> is greater than 0.5; (4) the <a href="http://gim.unmc.edu/dxtests/roc3.htm">AUC</a> is greater than 0.5. Currently, the data below represent the results of a single training-test split of 80%-20% per label. Please keep in mind that these models are just a proof-of-concept to show that we can get some signal out of the labeled data. Consequently, they're pretty straightforward in their construction  and lack any true optimization.  
+The following are metrics for draft (not horrible) models based on different runs of the labeled data. We consider a model not to be horrible when the following conditions are met: (1) the accuracy beats that of always guessing "yes" or always guessing "no;" (2) the <a href="https://en.wikipedia.org/wiki/Precision_and_recall#Recall">recall</a> is greater than 0.5; (3) the <a href="https://en.wikipedia.org/wiki/Precision_and_recall#Precision">precision</a> is greater than 0.5; and (4) the <a href="http://gim.unmc.edu/dxtests/roc3.htm">AUC</a> is greater than 0.5. Currently, the data below represent the results of a single training-test split of 80%-20% per label. Please keep in mind that these models are just a proof-of-concept to show that we can get some signal out of the labeled data. Consequently, they're pretty straightforward in their construction  and lack any true optimization.  
 </p>Version: <select id="version" onChange="update_models();update_model_drop(this.value);"><option value="2019-04-23">2019-04-23</option></select>&nbsp;&nbsp;Choose a model: <select id="model" onChange="update_models()">
 <option value="">Loading...</option></select><p><iframe id="eval" src="html/2019-04-23/Housing.html" width=100% height="480px" frameborder="0"></iframe></p><h2>Model Performance Summary</h2><iframe id="models_sum" src="html/2019-04-23/models.html" width=100% height="450px" frameborder="0"></iframe>
 </div>
