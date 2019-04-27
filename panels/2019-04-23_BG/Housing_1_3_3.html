@@ -1,0 +1,42 @@
+<h2>Housing_1_3_3 (11 texts)</h2><p>See <a href="../../csv/2019-04-23b/Housing.csv">Housing.csv</a> for a list of texts.</p>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
+
+
+<div id="ldavis_el793070289810961156307302"></div>
+<script type="text/javascript">
+
+var ldavis_el793070289810961156307302_data = {"mdsDat": {"x": [-60.31231689453125, 60.31256103515625], "y": [141.36962890625, -141.369140625], "topics": [1, 2], "cluster": [1, 1], "Freq": [43.86326092368139, 56.13673907631861]}, "tinfo": {"Category": ["Default", "Default", "Default", "Default", "Default", "Default", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2"], "Freq": [23.0, 17.0, 9.0, 7.0, 7.0, 12.0, 17.528108069590004, 6.802294692596654, 4.291791416869646, 1.653307138754215, 1.2833228243980934, 2.6545193782628744, 14.817793956507986, 6.284383829255833, 5.943793906481519, 7.768768668861784, 2.5942625502841463, 6.377653568137245], "Term": ["property", "house", "separate", "account", "half", "divorce", "property", "separate", "divorce", "half", "account", "house", "house", "account", "half", "divorce", "separate", "property"], "Total": [23.0, 17.0, 9.0, 7.0, 7.0, 12.0, 23.90576163772725, 9.3965572428808, 12.060560085731431, 7.597101045235734, 7.567706653653927, 17.47231333477086, 17.47231333477086, 7.567706653653927, 7.597101045235734, 12.060560085731431, 9.3965572428808, 23.90576163772725], "loglift": [6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 0.5138, 0.501, -0.2091, -0.7009, -0.9503, -1.0603, 0.4126, 0.3916, 0.332, 0.1376, -0.7097, -0.7439], "logprob": [6.0, 5.0, 4.0, 3.0, 2.0, 1.0, -0.6688, -1.6154, -2.0759, -3.0298, -3.2832, -2.5564, -1.0835, -1.9413, -1.997, -1.7292, -2.826, -1.9265]}, "token.table": {"Topic": [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2], "Freq": [0.13214042850315405, 0.7928425710189244, 0.33165955573923195, 0.6633191114784639, 0.263258312360375, 0.7897749370811249, 0.17170021751097125, 0.8585010875548562, 0.7529565580371645, 0.25098551934572155, 0.7449536909173277, 0.31926586753599756], "Term": ["account", "account", "divorce", "divorce", "half", "half", "house", "house", "property", "property", "separate", "separate"]}, "R": 6, "lambda.step": 0.01, "plot.opts": {"xlab": "PC1", "ylab": "PC2"}, "topic.order": [1, 2]};
+
+function LDAvis_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(LDAvis) !== "undefined"){
+   // already loaded: just create the visualization
+   !function(LDAvis){
+       new LDAvis("#" + "ldavis_el793070289810961156307302", ldavis_el793070289810961156307302_data);
+   }(LDAvis);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/LDAvis
+   require.config({paths: {d3: "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+        new LDAvis("#" + "ldavis_el793070289810961156307302", ldavis_el793070289810961156307302_data);
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & LDAvis
+    LDAvis_load_lib("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js", function(){
+         LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+                 new LDAvis("#" + "ldavis_el793070289810961156307302", ldavis_el793070289810961156307302_data);
+            })
+         });
+}
+</script>

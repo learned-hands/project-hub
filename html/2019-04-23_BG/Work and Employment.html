@@ -1,0 +1,19 @@
+<pre>Up sampling Yeas. This will duplicate Yeas until Training is 50% Yeas.
+
+All Entries:	2061	Affirmitive examples:	313 (15%)
+Training:	2794	Affirmitive examples:	1397.0 (50.0%)
+Testing:	412	Affirmitive examples:	61.0 (15.0%)
+</pre><p><img id="eval" src="../../graphs/2019-04-23_BG/Work and Employment.png"/></p><pre>
+0s: 0.85	True Positives: 49	Accuracy: 0.9344660194174758
+1s: 0.15	True Negatives: 336	AUC: 0.9703423473915277
+		False Positives: 15	F1 Score: 0.784
+		False Negatives: 12	Recall (fract of actual yeas found): 0.8032786885245902
+					Precision (correctness of yeas predicted): 0.765625</pre><pre>Trianed on <a href="../../texts/2019-04-23_best-guess_binary.csv">2019-04-23_best-guess_binary.csv</a>. Embedding = "word2vec". 
+
+Model = "VotingClassifier(estimators=[('logistic', LogisticRegression(C=1000000000.0, class_weight='balanced', dual=False,
+          fit_intercept=False, intercept_scaling=1, max_iter=100,
+          multi_class='warn', n_jobs=None, penalty='l2', random_state=None,
+          solver='warn', tol=0.0001, verbose=0, warm_start=Fa...        verbose=0, warm_start=False)), ('GaussianNB', GaussianNB(priors=None, var_smoothing=1e-09))],
+         flatten_transform=None, n_jobs=None, voting='soft',
+         weights=[1, 1, 1, 1, 1])". 
+</pre>

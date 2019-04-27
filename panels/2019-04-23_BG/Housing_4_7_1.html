@@ -1,0 +1,42 @@
+<h2>Housing_4_7_1 (12 texts)</h2><p>See <a href="../../csv/2019-04-23b/Housing.csv">Housing.csv</a> for a list of texts.</p>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
+
+
+<div id="ldavis_el793070289792962490596928"></div>
+<script type="text/javascript">
+
+var ldavis_el793070289792962490596928_data = {"mdsDat": {"x": [-60.31231689453125, 60.31256103515625], "y": [141.36962890625, -141.369140625], "topics": [1, 2], "cluster": [1, 1], "Freq": [44.551945230994804, 55.448054769005196]}, "tinfo": {"Category": ["Default", "Default", "Default", "Default", "Default", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2"], "Freq": [11.0, 12.0, 12.0, 9.0, 6.0, 10.93055620279429, 7.227346751660694, 2.1758617330048717, 1.3949735410584523, 1.8837927439089417, 10.927644870353124, 5.152683344928152, 7.09929296243657, 5.460082718085404, 0.7477651317695094], "Term": ["company", "landlord", "rental", "lease", "time", "company", "rental", "lease", "time", "landlord", "landlord", "time", "lease", "rental", "company"], "Total": [11.0, 12.0, 12.0, 9.0, 6.0, 11.678321334563801, 12.6874294697461, 9.275154695441442, 6.547656885986605, 12.811437614262065, 12.811437614262065, 6.547656885986605, 9.275154695441442, 12.6874294697461, 11.678321334563801], "loglift": [5.0, 4.0, 3.0, 2.0, 1.0, 0.7423, 0.2458, -0.6414, -0.7377, -1.1085, 0.4307, 0.3501, 0.3224, -0.2534, -2.1587], "logprob": [5.0, 4.0, 3.0, 2.0, 1.0, -0.7702, -1.1839, -2.3844, -2.8289, -2.5285, -0.9893, -1.7411, -1.4206, -1.6831, -3.6712]}, "token.table": {"Topic": [1, 2, 1, 2, 1, 2, 1, 2, 1, 2], "Freq": [0.9419161953904964, 0.08562874503549968, 0.15611050533263665, 0.8586077793295016, 0.21562982674380202, 0.7547043936033071, 0.5517272050017618, 0.3940908607155441, 0.15272639012899641, 0.763631950644982], "Term": ["company", "company", "landlord", "landlord", "lease", "lease", "rental", "rental", "time", "time"]}, "R": 5, "lambda.step": 0.01, "plot.opts": {"xlab": "PC1", "ylab": "PC2"}, "topic.order": [1, 2]};
+
+function LDAvis_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(LDAvis) !== "undefined"){
+   // already loaded: just create the visualization
+   !function(LDAvis){
+       new LDAvis("#" + "ldavis_el793070289792962490596928", ldavis_el793070289792962490596928_data);
+   }(LDAvis);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/LDAvis
+   require.config({paths: {d3: "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+        new LDAvis("#" + "ldavis_el793070289792962490596928", ldavis_el793070289792962490596928_data);
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & LDAvis
+    LDAvis_load_lib("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js", function(){
+         LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+                 new LDAvis("#" + "ldavis_el793070289792962490596928", ldavis_el793070289792962490596928_data);
+            })
+         });
+}
+</script>
